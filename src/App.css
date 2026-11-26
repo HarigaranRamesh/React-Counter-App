@@ -1,89 +1,71 @@
-.counter-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  background: #1e293b;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.app-container {
+  background: #0f172a;
   padding: 2rem;
-  width: 100%;
-  max-width: 320px;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 320px;
 }
 
 .title {
-  margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  color: #64748b;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .counter-display {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #0f172a;
-  margin-bottom: 1.75rem;
-  font-variant-numeric: tabular-nums;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 .button-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .btn {
-  font-size: 1rem;
-  font-weight: 500;
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.625rem 1rem;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-  user-select: none;
+  transition: opacity 0.15s ease;
 }
 
-.btn:focus-visible {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
+.btn:hover {
+  opacity: 0.9;
 }
 
-.btn-primary {
-  background-color: #2563eb;
-  color: #ffffff;
-  flex: 1;
-  font-size: 1.25rem;
-  font-weight: 600;
+.increment {
+  background: #22c55e;
+  color: #fff;
 }
 
-.btn-primary:hover {
-  background-color: #1d4ed8;
+.decrement {
+  background: #ef4444;
+  color: #fff;
 }
 
-.btn-secondary {
-  background-color: #f1f5f9;
-  border-color: #e2e8f0;
-  color: #1e293b;
-  flex: 1;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.btn-secondary:hover {
-  background-color: #e2e8f0;
-}
-
-.btn-outline {
-  background-color: #ffffff;
-  border-color: #cbd5e1;
-  color: #475569;
-  font-size: 0.875rem;
-}
-
-.btn-outline:hover {
-  background-color: #f8fafc;
-  color: #0f172a;
+.reset {
+  background: #64748b;
+  color: #fff;
 }
